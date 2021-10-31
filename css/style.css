@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --main-text-color: #757575;
   --secondary-text-color: #000000;
@@ -17,18 +27,45 @@ body {
   font-weight: 400;
 }
 
+/* elements resets */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
 }
 
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* logo */
+
 .logo {
+  display: inline-block;
   color: var(--accent-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .logo .dark-text {
@@ -39,6 +76,8 @@ body {
 
 .contact-link,
 .site-nav .link {
+  margin: 0 25px; /* temporary */
+
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -64,19 +103,29 @@ body {
 }
 
 .section-header {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
+.hidden-header {
+  display: none; /* temporary */
+}
+
 /* hero */
 .hero {
+  padding: 200px 25px;
+
   color: var(--inverted-text-color);
   background-color: var(--strong-bg-color);
   text-align: center;
 }
 
 .main-header {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,12 +134,15 @@ body {
 }
 
 .order-btn {
+  padding: 10px 30px;
+
   color: var(--inverted-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -99,10 +151,18 @@ body {
 }
 
 /* benefits section */
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
 
 .item-header {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.benefits-item {
+  margin: 0 15px;
 }
 
 .benefits-item p {
@@ -112,13 +172,27 @@ body {
 
 /* jobs section */
 
+.jobs {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.job {
+  margin: 0 15px;
+}
+
 /* team section */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--secondary-bg-color);
 }
 
 .person {
+  margin: 0 15px;
+
   text-align: center;
 }
 
@@ -134,8 +208,16 @@ body {
 
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   color: var(--inverted-text-color);
   background-color: var(--strong-bg-color);
+}
+
+.footer-contacts > li:nth-last-child(n + 2)
+/* not the last one */ {
+  margin-bottom: 9px;
 }
 
 .address-block {
