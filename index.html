@@ -16,24 +16,28 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container flex-header">
+        <a href="./index.html" class="logo"
+          >Web<span class="dark-text">Studio</span>
+        </a>
         <nav>
-          <a href="./index.html" class="logo"
-            >Web<span class="dark-text">Studio</span></a
-          >
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contacts list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="contact-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="contact-link"
               >+38 096 111 11 11</a
             >
@@ -50,10 +54,10 @@
           <button type="button" class="order-btn">Заказать услугу</button>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits section">
         <div class="container">
           <h2 class="section-header hidden-header">Преимущества</h2>
-          <ul class="list">
+          <ul class="benefits-list list">
             <li class="benefits-item">
               <h3 class="item-header">Внимание к деталям</h3>
               <p>
@@ -85,10 +89,10 @@
           </ul>
         </div>
       </section>
-      <section class="jobs">
+      <section class="jobs section">
         <div class="container">
           <h2 class="section-header">Чем мы занимаемся</h2>
-          <ul class="jobs-images list">
+          <ul class="jobs-list list">
             <li class="job">
               <img
                 src="./images/job1.jpg"
@@ -116,7 +120,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="team-persons list">
