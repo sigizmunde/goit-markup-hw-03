@@ -232,10 +232,10 @@ header {
 
 /* jobs section */
 
-.jobs {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
+/* .jobs {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 .jobs-list {
   display: flex;
@@ -334,10 +334,10 @@ header {
 
 /* --- PORTFOLIO --- */
 
-.portfolio {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
+/* .portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 .filter-buttons {
   display: flex;
