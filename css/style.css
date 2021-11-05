@@ -65,6 +65,10 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.header-logo {
+  margin-right: 93px;
+}
+
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -91,10 +95,6 @@ header {
   display: flex;
 }
 
-.site-nav {
-  margin-left: 93px;
-}
-
 .header-contacts {
   margin-left: auto;
 }
@@ -103,8 +103,8 @@ header {
 .header-contacts > .item {
   display: box;
   margin-right: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 
 .site-nav > .item:last-child,
@@ -114,6 +114,9 @@ header {
 
 .contact-link,
 .site-nav .link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -157,7 +160,7 @@ header {
 
 /* hero */
 .hero {
-  padding: 200px 25px;
+  padding: 200px 0;
 
   color: var(--inverted-text-color);
   background-color: var(--strong-bg-color);
@@ -198,10 +201,6 @@ header {
 }
 
 /* benefits section */
-.benefits {
-  /* padding-top: 94px; */
-  padding-bottom: 0;
-}
 
 .benefits-list {
   display: flex;
@@ -232,10 +231,9 @@ header {
 
 /* jobs section */
 
-/* .jobs {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
+.jobs {
+  padding-top: 0;
+}
 
 .jobs-list {
   display: flex;
@@ -264,9 +262,7 @@ header {
 
 .person {
   width: calc((100% - 90) / 4);
-  padding-bottom: 30px;
 
-  text-align: center;
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -278,7 +274,14 @@ header {
 }
 
 .person > img {
-  margin-bottom: 30px;
+  display: block;
+}
+
+.person .info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
 }
 
 .person-name {
